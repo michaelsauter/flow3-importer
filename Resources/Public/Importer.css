@@ -1,0 +1,67 @@
+/* CSS Reset */
+html, body,
+div, p, span,
+h1, h2, h3, h4, h5, h6,
+blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strike, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+
+
+/* General Styles */
+body {
+  background: #fff;
+  color: #000;
+  font: normal normal 12px/18px Helvetica, Arial, sans-serif;
+}
+
+
+
+/* Layout Styles */
+div#wrapper {
+  margin: 30px auto;
+  width: 960px;
+}
+
+h1{
+	background: #ddd;
+	padding: 10px;
+	width: 940px;
+}
+
+table#importer {
+	background: #ddd;
+	width: 960px;
+}
+
+table#importer th {
+	background: #eee;
+	padding: 10px;
+	width: 50%;
+}
+
+table#importer td {
+	background: #fff;
+	padding: 10px;
+	vertical-align: top;
+}
+
+table#importer tr.instructions td {
+	background: #d3fcac;
+}
+
+div#footer {
+	text-align: right;
+	padding: 10px;
+	width: 940px;
+}
+
+ul {
+	margin-left: 20px;
+}

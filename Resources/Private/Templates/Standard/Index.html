@@ -1,22 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
-     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:f="urn:flow3:fluid">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Index view of Standard controller</title> 
-		<f:base />
-	</head>
-	<body>
-		<h1>A freshly created Fluid template!</h1>
-		<p>Some data set by the controller:</p>
-		<ul>
-			
-			<f:for each="{foos}" as="foo">
-			<li>{foo}</li>
-			</f:for>
-			
-		</ul>
-	</body>
-</html>
+<f:layout name="Master" />
+
+<f:section name="content">
+	<f:form action="stepOne">
+		<table id="importer">
+			<tr>
+				<th>Start</th>
+			</tr>
+			<tr class="instructions">
+				<td>Please note the following</td>
+			</tr>
+			<tr>
+				<td>
+					<ul>
+						<li>Importer let's you import data by mapping database table attributes to model properties.</li>
+						<li>So far, Importer works only with MySQL databases.</li>
+						<li>The model you want to use needs to be accessible via a repository.</li>
+						<li>When you run the same import twice, you will end up with duplicates.</li>
+						<li>The code is untested and only a prototype.</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<div id="footer">
+			<f:form.submit value="Start" />
+		</div>
+	</f:form>
+</f:section>

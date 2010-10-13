@@ -1,0 +1,27 @@
+<f:layout name="Master" />
+
+<f:section name="content">
+	<f:form action="stepFour">
+		<table id="importer">
+			<tr>
+				<th>Source</th>
+				<th>Destination</th>
+			</tr>
+			<tr class="instructions">
+				<td>Map attribute ...</td>
+				<td>... to property</td>
+			</tr>
+			<f:for each="{attributes}" as="attribute">
+				<tr>
+					<td>{attribute}</td>
+					<td>
+						<f:form.select name="mappings[{attribute}]" options="{properties}" value="{defaultProperty}" />
+					</td>
+				</tr>
+			</f:for>
+		</table>
+		<div id="footer">
+			<f:form.submit value="Import" />
+		</div>
+	</f:form>
+</f:section>

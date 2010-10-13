@@ -1,0 +1,27 @@
+<f:layout name="Master" />
+
+<f:section name="content">
+	<f:form action="stepThree">
+		<table id="importer">
+			<tr>
+				<th>Source</th>
+				<th>Destination</th>
+			</tr>
+			<tr class="instructions">
+				<td>Select table</td>
+				<td>Select model</td>
+			</tr>
+			<tr>
+				<td>
+					<f:form.select name="tableName" options="{tables}" />
+				</td>
+				<td>
+					<f:form.select name="modelName" options="{models}" />
+				</td>
+			</tr>
+		</table>
+		<div id="footer">
+			<f:form.submit value="Next" />
+		</div>
+	</f:form>
+</f:section>

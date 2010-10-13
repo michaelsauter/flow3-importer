@@ -1,0 +1,44 @@
+<f:layout name="Master" />
+
+<f:section name="content">
+	<f:form action="stepTwo">
+		<table id="importer">
+			<tr>
+				<th>Source</th>
+				<th>Destination</th>
+			</tr>
+			<tr class="instructions">
+				<td>Enter DB details</td>
+				<td>Select package</td>
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td>Host</td>
+							<td><f:form.textfield name="host" value="localhost" /></td>
+						</tr>
+						<tr>
+							<td>Username</td>
+							<td><f:form.textfield name="username" value="root" /></td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td><f:form.textfield name="password" value="root" /></td>
+						</tr>
+						<tr>
+							<td>Database name</td>
+							<td><f:form.textfield name="databaseName" value="" /></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<f:form.select name="packageKey" options="{packages}" />
+				</td>
+			</tr>
+		</table>
+		<div id="footer">
+			<f:form.submit value="Next" />
+		</div>
+	</f:form>
+</f:section>
